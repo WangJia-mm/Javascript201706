@@ -6,6 +6,7 @@
 </head>
 <body>
 <script type="text/javascript">
+<<<<<<< HEAD
 //        var len = 5;
 //        var fn = function (){
 //            console.log(this);
@@ -35,6 +36,37 @@
         ary[1](); // ary.1()  ary
         var arry = ary[1];
         arry(); // window
+=======
+    //        var len = 5;
+    //        var fn = function (){
+    //            console.log(this);
+    //        };
+    //        var main = {
+    //            fn: function (fn){
+    //                console.log(this); // main
+    //                fn(); // window
+    //                arguments[0](); // arguments.0() Arguments
+    //            },
+    //            len: 10
+    //        };
+    //        main.fn(fn);
+
+
+    function fn1() {
+        console.log(this === ary);
+    }
+    function fn2() {
+        console.log(this);
+    }
+    function fn3() {
+    }
+    function fn4() {
+    }
+    var ary = [fn1, fn2, fn3, fn4];
+    ary[1](); // ary.1()  ary
+    var arry = ary[1];
+    arry(); // window
+>>>>>>> 562ff696b3ff44c4eb130f0105caae77de613b91
 
     /////////////////////////////////////////////////////////////////////////////////////////////
     var num = 5; // 6 7
